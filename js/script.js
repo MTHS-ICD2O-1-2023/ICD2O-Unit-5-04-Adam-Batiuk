@@ -6,11 +6,11 @@
 
 function myButtonClicked() {
   // input
-  const negative = document.getElementById("negative").checked
-  let randomNumber = Math.floor(Math.random() * 6) + 1
+  const tuesday = document.getElementById("tuesday").checked
+  const thursday = document.getElementById("thursday").checked
 
   // process
-  if (negative == true) {
+  if ((tuesday == true) || (thursday == true) || ()) {
     randomNumber = randomNumber * (-1)
     document.getElementById("answer").innerHTML = "The random number is: " + randomNumber
   } else {
