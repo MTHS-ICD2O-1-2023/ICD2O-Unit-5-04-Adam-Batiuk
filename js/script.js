@@ -8,12 +8,12 @@ function myButtonClicked() {
   // input
   const tuesday = document.getElementById("tuesday").checked
   const thursday = document.getElementById("thursday").checked
+  const age = parseInt(document.getElementById("user-age").value)
 
   // process
-  if ((tuesday == true) || (thursday == true) || ()) {
-    randomNumber = randomNumber * (-1)
-    document.getElementById("answer").innerHTML = "The random number is: " + randomNumber
+  if ((tuesday == true) || (thursday == true) || ((age > 12) && (age < 21))) {
+    document.getElementById("answer").innerHTML = "You are eligible student pricing!"
   } else {
-    document.getElementById("answer").innerHTML = "The random number is: " + randomNumber
+    document.getElementById("answer").innerHTML = "You will have to pay the normal fee."
   }
 }
